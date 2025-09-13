@@ -21,7 +21,7 @@ plt.plot(df_rtt["time"], df_rtt["rtt_ms"], marker="o", linestyle="-")
 plt.xlabel("Time")
 plt.ylabel("RTT (ms)")
 plt.title("TCP RTT over Time")
-plt.grid(True, which='both', axis='both')
+
 plt.grid(True)
 
 # Format x-axis like your example (MM DD:HH:MM)
