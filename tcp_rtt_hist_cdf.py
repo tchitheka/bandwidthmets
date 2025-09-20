@@ -5,7 +5,9 @@ import numpy as np
 # Load RTT data from CSV
 #df = pd.read_csv("uct_lab_tcp_rtt_analysis.csv")
 #df = pd.read_csv("rtt_focus_1-14-apr-2024.csv")
-df = pd.read_csv("yahoo_tcp_rtt.csv")
+#df = pd.read_csv("yahoo_tcp_rtt.csv")
+df = pd.read_csv("inethi_FOCUS_OV_2024-04-08_00-00-01.csv")
+
 
 
 # Replace 'rtt' with your actual column name if different
@@ -23,9 +25,9 @@ counts, bins, patches = ax1.hist(latency_clean, bins=60, density=True, alpha=0.6
 ax1.set_xlabel("RTT (ms)")
 ax1.set_ylabel("Density (Histogram)", color="steelblue")
 
-ax1.set_xlim(0, 300)
+ax1.set_xlim(0, 500)
 
-ax1.set_xticks(np.arange(0, 300, 50))  # x-axis ticks every 50 ms
+ax1.set_xticks(np.arange(0, 500, 30))  # x-axis ticks every 50 ms
 
 # CDF
 ax2 = ax1.twinx()
